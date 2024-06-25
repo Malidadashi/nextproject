@@ -2,24 +2,24 @@ import React from 'react'
 import Comment from './comment'
 
 const comments = [
-    {id : 1 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloribus quaerat ab exercitationem inventore delectus doloremque deleniti odit quae, aperiam molestias '},
-    {id : 2 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'expedita vero eveniet nostrum sed unde. Temporibus, sed nesciunt.expedita vero eveniet '},
-    {id : 3 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'expedita vero eveniet nostrum sed unde. Temporibus, sed nesciunt.'},
-    {id : 5 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloribus quaerat ab exercitationem inventore delectus doloremque deleniti odit quae, aperiam molestias expedita vero eveniet nostrum sed unde. Temporibus, sed nesciunt.'},
-    {id : 4 , name : 'Arsalan ghoochani' , desc : 'Technical team leader' , text : 'xpedita vero eveniet nostr empo xpedita vero eveniet nostr empo  xpedita vero eveniet nostr empo xpedita vero eveniet nostr empoeribus, sed nesciunt.'},
-    {id : 6 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'expedita vero eveniet nostrum sed unde. Temporibus, sed nesciunt.expedita vero eveniet nostrum sed unde. Temporibus, sed nesciunt.'},
-    {id : 7 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'expedita vero eveniet nostr emporibus, sed nesciunt.'},
-    {id : 8 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'expedita vero eveniet nostr emporibus, sed nesciunt.'},
-    {id : 9 , name : 'Arsalan ghoochani' , desc : 'graphic and ui ux designer' , text : 'expedita vero eveniet nostr emporibus, sed nesciunt.'},
+  { id: 1, name: 'Ali Alavi', desc: 'graphic and ui ux designer', text: '"To design more effectively and attractively, you can figure out the right colors."' },
+  { id: 2, name: 'Hesam Porghazian', desc: 'Back-end Developer', text: '"No advice in development: be more pleasant with your backend colleague :)"' },
+  { id: 3, name: 'Mehdi Yahyavi', desc: 'Front-end Developer', text: '"I really hate using Tailwind in my project because personally, I think it makes the project heavier and heavier."' },
+  { id: 5, name: 'Ashkan Ebadi', desc: 'Software Engineer', text: '"Software development is a craft that demands continuous learning and adaptation to new technologies.But I`ve still been driving with Uber :)" ' },
+  { id: 4, name: 'Anonymous', desc: 'Technical team leader', text: '"The essence of programming is to turn ideas into code effectively and efficiently."' },
+  { id: 6, name: 'Filipe Fortes', desc: 'Fullstack Developer', text: '"Debugging is like being the detective in a crime movie where you are also the murderer." ' },
+  { id: 7, name: 'Ron Jeffries', desc: 'graphic and ui ux designer', text: '"Code never lies, comments sometimes do."' },
+  { id: 8, name: 'Thomas Fuchs', desc: 'Product Designer', text: '"Good software, like wine, takes time." ' },
+  { id: 9, name: ' Ellen Ullman', desc: 'DevOps Engineer', text: '"Programming is the art of algorithm design and the craft of debugging errant code."' },
 ]
 
 export default function CommentWrapper() {
   return (
     <>
-    <h3 className='title'>Comments</h3>
-    <section className='comment-wrapper my-12 flex flex-col max-w-screen-xl xl:px-12 xl:max-h-[50rem] flex-wrap gap-8 items-center mx-auto md:max-h-[65rem] max-xl:max-w-[50rem] max- max-md:px-4'>
-        {comments.map(comment => <Comment key={comment.id} {...comment}/>)}
-    </section>
+      <h3 className='title'>Comments</h3>
+      <section className='comment-wrapper my-12 flex flex-col max-w-screen-xl xl:px-12 xl:max-h-[50rem] flex-wrap gap-8 items-center mx-auto md:max-h-[65rem] max-xl:max-w-[50rem] max- max-md:px-4'>
+        {comments.map(comment => <Comment key={comment.id} {...comment} />)}
+      </section>
     </>
   )
 }

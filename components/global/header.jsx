@@ -6,6 +6,7 @@ import { useRefs } from '@/context/refsProvider';
 import { useRouter } from 'next/router';
 import { HiOutlineMenu } from "react-icons/hi";
 import LngSelection from './lngSelection';
+import DarkModeToggle from './DarkModeToggle';
 
 
 export default function Header() {
@@ -19,9 +20,10 @@ export default function Header() {
     <header className={`2xl:max-w-screen-2xl max-w-screen-xl md:h-20 mx-auto text-neutral-700  flex items-center px-4 md:pl-8 text-lg justify-between font-semibold transition-all duration-300  max-md:flex-wrap max-md:p-2 `}>
         <button onClick={() => setDisplaySide(!displaySide)} className='md:hidden'><HiOutlineMenu className='text-3xl'/></button>
         <Links/>
+        <DarkModeToggle/>
         <div className='flex text-base relative'>
           <button onClick={() => setDisplayLang(!displayLang)} className='p-3 px-4 rounded-xl flex gap-x-3 items-center border-2 md:shadow-md transition-all max-sm:py-2'><EngFlag/><p className='max-sm:hidden'>Eng</p><FaChevronDown className={`transition-all ${displayLang ? 'rotate-180' : 'rotate-0'}`}/></button>
-          <a target="_blank" href='https://github.com/Arsi-gh' rel="noopener noreferrer" className='p-3 px-4 flex gap-2 items-center ml-2 bg-gradient-to-bl from-neutral-800 to-neutral-700 md:shadow-md text-white rounded-xl'><p className='max-sm:hidden'>Github</p><FaGithub className='text-3xl max-sm:text-2xl'/></a>
+          <a target="_blank" href='https://github.com/malidadashi' rel="noopener noreferrer" className='p-3 px-4 flex gap-2 items-center ml-2 bg-gradient-to-bl from-neutral-800 to-neutral-700 md:shadow-md text-white rounded-xl'><p className='max-sm:hidden'>Github</p><FaGithub className='text-3xl max-sm:text-2xl'/></a>
           {displayLang && <LngSelection displayHandler={setDisplayLang}/>}
         </div>
         <SidebarLinks display={displaySide}/>

@@ -16,6 +16,7 @@ export default function SkillChart() {
          <circle className='stroke-neutral-700' cx="190" cy="190" r="71" strokeLinecap="round" />
          <circle className='stroke-neutral-700' cx="190" cy="190" r="48" strokeLinecap="round" />
          <circle className='stroke-neutral-700' cx="190" cy="190" r="25" strokeLinecap="round" />
+
         </svg>
         <div className='absolute bottom-10 font-semibold right-[90px]'>
           <p>Js</p>
