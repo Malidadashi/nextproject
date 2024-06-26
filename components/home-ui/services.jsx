@@ -3,6 +3,7 @@ import React , {useEffect, useRef, useState} from 'react'
 import Title from '../global/title';
 import Image from 'next/image';
 
+
 export default function Services() {
   
   const {servicesRef} = useRefs()
@@ -17,8 +18,8 @@ export default function Services() {
       <article ref={slideRef} className='lg:w-[60rem] sm:h-[30rem] h-[15rem] max-lg:w- rounded-xl shadow-neutral-300 shadow-2xl bg-white relative overflow-hidden'>
         <ServiceWrapper display={toggleDisplay}/>
       </article>
-      <div className='flex max-sm:flex-col rounded-lg overflow-hidden bg-white shadow-2xl shadow-neutral-500 transition-all absolute -bottom-8 max-sm:-bottom-9 left-1/2 -translate-x-1/2'>
-        <button onClick={() => setToggleDisplay(false)} className={`p-4 text-lg z-10 max-sm:text-sm max-sm:p-2 ${!toggleDisplay && 'bg-neutral-700 text-white'}`}>Development</button>
+      <div className='flex max-sm:flex-col rounded-lg overflow-hidden bg-white shadow-2xl shadow-neutral-500 transition-all absolute -bottom-8 max-sm:-bottom-9 left-1/2 -translate-x-1/2 hover:cursor-pointer'>
+        <button onClick={() => setToggleDisplay(false)} className={`p-4 text-lg z-10 max-sm:text-sm max-sm:p-2 ${!toggleDisplay && 'bg-neutral-700 text-white '}`}>Development</button>
         <button onClick={() => setToggleDisplay(true)} className={`p-4 text-lg z-10 max-sm:text-sm max-sm:p-2 ${toggleDisplay && 'bg-neutral-700 text-white'}`}>Ui Ux design</button>
       </div>
     </section>

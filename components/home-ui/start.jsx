@@ -14,7 +14,7 @@ export default function Start() {
 
 const ImageAnimation = () => {
 
-    const data = "Arsalan ghoochani - Web Developer - UiUx Designer -"
+    const data = "M.Ali Dadashi - Web Developer"
 
     return (
         <section className='relative w-80 h-80 rounded-full flex justify-center items-center max-[400px]:scale-95 max-[300px]:scale-75'>

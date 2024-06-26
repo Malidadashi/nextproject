@@ -1,6 +1,18 @@
 @media only screen and (min-width: 768px) {
-    .comment-wrapper{
-        -webkit-mask: linear-gradient(180deg , transparent , white 0% , white 75% , transparent);
-        mask : linear-gradient(180deg , transparent , white 0% , white 75% , transparent);
+    .comment-wrapper {
+        -webkit-mask: linear-gradient(180deg, transparent, white 0%, white 75%, transparent);
+        mask: linear-gradient(180deg, transparent, white 0%, white 75%, transparent);
+
+    }
+
+    .comment-box.opacity-100 {
+        opacity: 1;
     }
 }
+
+
+
+/* .comment-box {
+        transition: opacity .5ms ease-in-out;
+        opacity: 0;
+      } */

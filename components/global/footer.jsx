@@ -2,6 +2,12 @@ import Link from 'next/link'
 import React from 'react'
 import { LuMoveRight } from "react-icons/lu";
 
+const scrollToServices = () => {
+  if (servicesRef.current) {
+    servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default function Footer() {
   return (
     <div className='w-full p-4'>
@@ -36,6 +42,9 @@ const Links = () => {
     <ul className='flex flex-col gap-y-1 text-neutral-600'>
       <li className='text-xl font-semibold mb-2 text-neutral-700'>Links</li>
       <li><Link href=''>Services</Link></li>
+      <li><Link href='/projects' onClick={scrollToServices}>test</Link></li>
+      {/* <li><link href='#project' onClick={scrollToServices}>Services</link></li> */}
+
       <li><Link href=''>Projects</Link></li>
       <li><Link href=''>About me</Link></li>
       <li><Link href=''>Contact me</Link></li>
