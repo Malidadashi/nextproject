@@ -1,6 +1,11 @@
+const handleExternalLink = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
+
 export const projectsData = [
     {
-        id : 1, 
+        id : 80, 
         title : 'Mobile cofee website redesign',
         desc : "Client latest website was an awful example of development , performace and ui ux design . At the start , I redesigned the whole website plus a digital menu with lot of features such as Search option , category buttons , persion and english support , call action buttons and etc to provide a fast and accessible menu for customers to find their item as soon as possible. I have used the greate power of Next js and tailwind css to create a compatible app that can be use in any dimension of screens  ",
         types : [4],

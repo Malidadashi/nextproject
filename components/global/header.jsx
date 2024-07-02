@@ -47,7 +47,7 @@ const Links = () => {
 
   return (
     <ul className='flex gap-x-10 items-center max-md:hidden'>
-      <li><Link href="/" className='text-2xl'>Arsi</Link></li>
+      <li><Link href="/" className='text-2xl'>MAD</Link></li>
       <li><Link href="/projects" className='cursor-pointer'>Projects</Link></li>
       <li className='cursor-pointer' onClick={() => handleClick(aboutRef)}>About me</li>
       <li><Link href='/contact'>Contact me</Link></li>
